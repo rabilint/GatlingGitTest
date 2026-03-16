@@ -23,10 +23,10 @@ object BaseHelpers {
   val testDuration: Int = 14400            // Main phase: 4 hours (in seconds)
   val assertionType: String = "stability"*/
 
-  val userCount: Int = 5
-  val rampDuration: Int = 10
-  val testDuration: Int = 10
-  val assertionType: String = "stability"
+  val userCount: Int = Integer.getInteger("users", 5).toInt
+  val rampDuration: Int = Integer.getInteger("ramp", 1).toInt
+  val testDuration: Int = Integer.getInteger("duration", 10).toInt
+  val assertionType: String = System.getProperty("assertionType", "stability")
 
   // val userCount: Int = 39                // Saturation point was 45, we use 40 for stability
   // val rampDuration: Int = 300              // Warm-up phase: 10 minutes (in seconds)
