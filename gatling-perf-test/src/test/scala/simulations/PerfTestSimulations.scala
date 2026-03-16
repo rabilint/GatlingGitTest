@@ -32,6 +32,7 @@ class PerfTestSimulations extends Simulation {
     constantConcurrentUsers(userCount).during(testDuration.seconds)
   )
 
+/*
  setUp(
   openModel
   ).protocols(httpProtocol)
@@ -39,16 +40,17 @@ class PerfTestSimulations extends Simulation {
  val capacityModel: PopulationBuilder = StoreScenario.scnStore.inject(
     rampConcurrentUsers(1).to(userCount).during(rampDuration.seconds)
   )
+  */
 
   val stabilityModel: PopulationBuilder = StoreScenario.scnStore.inject(
     rampConcurrentUsers(1).to(userCount).during(rampDuration.seconds),
     constantConcurrentUsers(userCount).during(testDuration.seconds)  // Тут буде 1800 сек
   )
 
- // setUp(
- //   stabilityModel
- // ).protocols(httpProtocol)
- // .assertions(AssertionsMap.assertionsMap(assertionType))
+ setUp(
+    stabilityModel
+  ).protocols(httpProtocol)
+ .assertions(AssertionsMap.assertionsMap(assertionType))
 
 //  setUp(
   //   capacityModel
