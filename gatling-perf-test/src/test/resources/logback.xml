@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%-5level] %logger{15} %msg%n%rEx</pattern>
+        </encoder>
+        <immediateFlush>false</immediateFlush>
+    </appender>
+        <!-- uncomment below appender if you want to save all the execution logs into a file -->
+        <!--
+        &lt;!&ndash; -->
+<appender name="FILE" class="ch.qos.logback.core.FileAppender">
+<encoder>
+<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} %msg%n</pattern>
+</encoder>
+<immediateFlush>false</immediateFlush>
+<file>target/execution.log</file>
+        </appender>
+        <!--&ndash;&gt;-->
+        <!--
+        <Loggers>-->
+        <!--
+        <Logger name="io.gatling.http.engine.response" level="DEBUG">-->
+        <!--
+        <AppenderRef ref="CONSOLE"/>-->
+        <!--
+        </Logger>-->
+        <!--
+        <Logger name="io.gatling.http.engine.response" level="TRACE">-->
+        <!--
+        <AppenderRef ref="FILE"/>-->
+        <!--
+        </Logger>-->
+        <!-- uncomment and set to DEBUG to log all failing HTTP requests -->
+        <!-- uncomment and set to TRACE to log all HTTP requests -->
+        <!-- use this logger in case of gatling with scala -->
+
+<logger name="io.gatling.http.engine.response" level="DEBUG"/>-->
+
+    <logger name="io.gatling.http.engine.response" level="TRACE"/>
+        <!--
+
+        <logger name="io.gatling.http.engine.response" level="TRACE" ref="FILE"/>-->
+        <!-- use this logger in case of gatling ws/wss with scala -->
+<logger name="io.gatling.http.action.ws.fsm" level="DEBUG"/>
+        <!--
+        <Logger name="io.gatling.http.action.ws.fsm" level="TRACE"/>-->
+        <!-- use this logger in case of gatling with karate -->
+
+<root level="ERROR">
+<!-- <appender-ref ref="CONSOLE"/> -->
+<!-- uncomment below if above FILE appender is enabled-->
+<appender-ref ref="FILE"/>
+</root>
+<!--</Loggers>-->
+</configuration>

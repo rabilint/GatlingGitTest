@@ -1,0 +1,16 @@
+p_company,p_name,p_address,p_postal,p_city,p_country,p_phone,p_email,p_comment
+IT Solutions,Oleksandr Kovalenko,Shevchenka St 10,01001,Kyiv,UA,0501234567,olex.koval@testmail.com,Call before delivery
+Creative Design,Iryna Melnyk,Khreshchatyk 25,01002,Kyiv,UA,0679876543,iryna.melnyk@demomail.net,Gate code 1234
+Boyko Logistics,Andrii Boyko,Franka St 5,79000,Lviv,UA,0935557788,a.boyko88@fakemail.org,Leave at reception
+Beauty Salon,Olena Kravchenko,Soborna Ave 100,21000,Vinnytsia,UA,0662223344,o.kravchenko@webtest.ua,
+Bondar Eng,Serhii Bondar,Sumska St 40,61000,Kharkiv,UA,0631112299,serg.bond@testprovider.com,Do not ring doorbell
+Freelance,Tetiana Tkachenko,Deribasivska 12,65000,Odesa,UA,0998887766,tanya.tkach@mailservice.io,
+Agro Trade,Mykola Shevchuk,Myru Ave 50,49000,Dnipro,UA,0504445566,mykola.shev@agrotest.com,Call on arrival
+Tech Soft,Dmytro Lytvyn,Metalurhiv 15,69000,Zaporizhzhia,UA,0971231234,dmytro.lyt@softmail.net,
+Edu Center,Natalia Moroz,Kyivska 8,10000,Zhytomyr,UA,0739998877,nata.moroz@edutest.org,Office 305
+Auto Parts,Viktor Rudenko,Peremohy 10,33000,Rivne,UA,0667776655,viktor.rud@autotest.com,Backdoor delivery
+Web Studio,Oksana Lysenko,Haharina 3,18000,Cherkasy,UA,0955554433,oksana.lys@webstudio.ua,
+Dev Ops Inc,Pavlo Bondarenko,Kobylyanskoyi 7,58000,Chernivtsi,UA,0681110022,pavlo.bond@devopstest.io,Code 0000
+Green Energy,Svitlana Kozlova,Svobody 20,46000,Ternopil,UA,0992223344,sveta.koz@greenenergy.net,
+Build Corp,Roman Pavlenko,Soborna 12,29000,Khmelnytskyi,UA,0633332211,roman.pav@buildcorp.com,Warning angry dog
+Fast Food,Vasyl Havryliuk,Nezalezhnosti 5,76000,Ivano-Frankivsk,UA,0674445566,vasyl.hav@fastfood.test,
