@@ -7,7 +7,7 @@ const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 async function captureReport() {
     const browser = await puppeteer.launch({
         headless: true, //Для того-щоб бачити вікно браузера та як проходить тест
-        args: ['--no-sandbox', '--disable-gpu', '--window-size=1920,1080', '--host-resolver-rules="MAP localhost host.docker.internal"'],
+        args: ['--no-sandbox', '--disable-gpu', '--window-size=1920,1080'],
         defaultViewport: null //Для того-щоб сайт рендерився в розширені заданому вище
     });
 
