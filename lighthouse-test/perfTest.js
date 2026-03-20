@@ -60,7 +60,8 @@ async function captureReport() {
         await flow.navigate(baseURL, { stepName: 'Open Main Page' });
 
 
-
+        console.log(`Current page URL after navigate: ${await page.url()}`);
+        await page.screenshot({ path: `screenshot_step1_iter_${i}.png` });
         //================================STEP 2: NAVIGATE TO "TABLES" TAB================================
 
         console.log("Step 2: Navigate to \"Tables\" tab...");
